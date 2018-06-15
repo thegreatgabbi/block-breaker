@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class LoseCollider : MonoBehaviour {
 
-    public LevelManager levelManager;
+    private LevelManager levelManager;
 
     // Use this for initialization
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-        print("Trigger");
-        levelManager.LoadLevel("Win");
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
+        Brick.breakableCount = 0;
+        levelManager.LoadLevel("Lose Screen");
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-        print("Collision");
 	}
 }

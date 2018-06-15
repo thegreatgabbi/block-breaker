@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour
+{
 
-    public void LoadLevel(string name) {
+    public void LoadLevel(string name)
+    {
         Debug.Log("Load request for " + name);
         SceneManager.LoadScene(name);
     }
@@ -13,5 +15,18 @@ public class LevelManager : MonoBehaviour {
     {
         Debug.Log("Quit requested.");
         Application.Quit();
+    }
+    public void LoadNextLevel()
+    {
+        print("Scene " + (SceneManager.GetActiveScene().buildIndex + 1).ToString() + "requested.");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void BrickDestoyed()
+    {
+        if (Brick.breakableCount <= 0)
+        {
+            LoadNextLevel();
+        }
     }
 }

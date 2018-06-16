@@ -7,6 +7,8 @@ public class Paddle : MonoBehaviour {
     public bool autoPlay = false;
 
     private Ball ball;
+    private float maxX = 0.75f;
+    private float maxY = 15.25f;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +28,7 @@ public class Paddle : MonoBehaviour {
         Vector3 paddlePos = new Vector3(0.5f, this.transform.position.y, 0f);
         Vector3 ballPos = this.ball.transform.position;
 
-        paddlePos.x = Mathf.Clamp(ballPos.x, 0.5f, 15.5f);
+        paddlePos.x = Mathf.Clamp(ballPos.x, maxX, maxY);
 
         this.transform.position = paddlePos;
     }
@@ -36,7 +38,7 @@ public class Paddle : MonoBehaviour {
 
         float MousePosInBox = Input.mousePosition.x / Screen.width * 16;
 
-        paddlePos.x = Mathf.Clamp(MousePosInBox, 0.5f, 15.5f);
+        paddlePos.x = Mathf.Clamp(MousePosInBox, maxX, maxY);
 
         this.transform.position = paddlePos;
     }

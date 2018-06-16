@@ -2,12 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Paddle.cs">
     <Files>
-      <File FileName="Assets/Scripts/Ball.cs" Line="9" Column="35" />
-      <File FileName="Assets/Scripts/Brick.cs" Line="39" Column="26" />
-      <File FileName="Assets/Scripts/LoseCollider.cs" Line="14" Column="44" />
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="30" Column="6" />
-      <File FileName="Assets/Scripts/MusicPlayer.cs" Line="25" Column="3" />
-      <File FileName="Assets/Scripts/Paddle.cs" Line="17" Column="14" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="40" Column="75" />
+      <File FileName="Assets/Scripts/Brick.cs" Line="36" Column="67" />
+      <File FileName="Assets/Scripts/LoseCollider.cs" Line="17" Column="52" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="17" Column="28" />
+      <File FileName="Assets/Scripts/MusicPlayer.cs" Line="14" Column="52" />
+      <File FileName="Assets/Scripts/Paddle.cs" Line="26" Column="75" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

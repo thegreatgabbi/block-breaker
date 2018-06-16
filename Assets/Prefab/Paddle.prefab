@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4125090859499060}
   - component: {fileID: 212667340133028602}
-  - component: {fileID: 61454161776200098}
+  - component: {fileID: 60101122842409446}
   - component: {fileID: 50973045121085112}
   - component: {fileID: 114644431494263024}
   m_Layer: 0
@@ -63,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61454161776200098
-BoxCollider2D:
+--- !u!60 &60101122842409446
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -79,15 +79,18 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.3203125}
+    oldSize: {x: 1.54, y: 0.41}
     newSize: {x: 1.28, y: 0.41}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.3203125}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.46949005, y: 0.201949}
+      - {x: -0.45728588, y: 0.20499998}
+      - {x: -0.77, y: -0.205}
+      - {x: 0.77, y: -0.205}
 --- !u!114 &114644431494263024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,7 +138,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4095a0c6e7a314280ac596dcdfd9b594, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 49052e4aab19449fa9c5bb1468393739, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
